@@ -162,7 +162,7 @@ namespace Class_03_ComparisonOperators
             {
                 percentageIncrease = 7f;
             }
-
+        
             var valueToIncrease = salary * percentageIncrease / 100f;
             var adjustedSalary = salary + valueToIncrease;
 
