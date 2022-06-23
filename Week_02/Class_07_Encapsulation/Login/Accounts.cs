@@ -7,11 +7,12 @@ namespace Class_07_Encapsulation.Login
 	public static class Accounts
 	{
 		private static readonly IList<Account> RegisteredAccounts;
-		private static readonly Cryptography Hash = new(SHA512.Create());
+		private static readonly Cryptography Hash;
 
 		static Accounts()
 		{
 			RegisteredAccounts = new List<Account>();
+			Hash = new(SHA512.Create());
 		}
 
 		public static void SetAccount(Account account)
